@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORSI AI</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./public/logoAja.png" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+
+    <!-- ScrollSpy Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const navLinks = document.querySelectorAll("nav a");
+        const sections = document.querySelectorAll("section");
+
+        function setActiveLink() {
+          let index = sections.length;
+          while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
+
+          navLinks.forEach((link) =>
+            link.classList.remove("text-blue-600", "font-semibold", "underline")
+          );
+          if (navLinks[index]) {
+            navLinks[index].classList.add("text-blue-600", "font-semibold", "underline");
+          }
+        }
+
+        setActiveLink();
+        window.addEventListener("scroll", setActiveLink);
+      });
+    </script>
+  </head>
+  <body class="bg-white text-gray-800 scroll-smooth">
+
+    <!-- Header -->
+    <header class="border-b sticky top-0 z-50 bg-white">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+          <img src="./public/logo.png" class="h-10 w-auto" />
+        </div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="#home" class="font-medium transition-colors duration-200">Home</a>
+          <a href="#how-it-works" class="font-medium transition-colors duration-200">How it Works</a>
+        </nav>
+        <a
+          href="https://prompt-ai-teab.vercel.app"
+          class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition"
+        >
+          Get Started
+        </a>
+      </div>
+    </header>
+
+    <!-- Fullscreen Hero Section -->
+    <section id="home" class="flex flex-col justify-center items-center text-center min-h-screen bg-gradient-to-b from-white to-blue-50 px-4">
+      <div class="max-w-3xl">
+        <h2 class="text-sm font-semibold text-gray-500 mb-2">PORSI AI</h2>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+          Fix Your Thesis Format <br /> Instantly with AI
+        </h1>
+        <p class="text-gray-600 text-lg mb-6">
+          An AI-powered tool to automatically adjust your thesis format according to FTIF/UNIBBA's official guidelines.
+        </p>
+        <a href="https://prompt-ai-teab.vercel.app" class="inline-block bg-white border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-2 rounded-full font-medium transition">
+          Start Generating ✨
+        </a>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-16 px-4 bg-white">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
+        <ol class="space-y-10">
+          <li class="flex items-start space-x-4">
+            <div class="text-blue-600 font-bold text-xl">1</div>
+            <div>
+              <h3 class="font-semibold text-lg mb-1">Login</h3>
+              <p class="text-gray-600">
+                Sign in to the platform using your student account to access the thesis formatting assistant. Only registered users from FTIF/UNIBBA can access the system to ensure data security and proper usage.
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start space-x-4">
+            <div class="text-blue-600 font-bold text-xl">2</div>
+            <div>
+              <h3 class="font-semibold text-lg mb-1">Paste Your Thesis Text</h3>
+              <p class="text-gray-600">
+                Copy and paste the part of your thesis that you want to format.
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start space-x-4">
+            <div class="text-blue-600 font-bold text-xl">3</div>
+            <div>
+              <h3 class="font-semibold text-lg mb-1">Choose the Section</h3>
+              <p class="text-gray-600">
+                Select which part of the thesis the text belongs to (e.g., Abstract, Chapter 1: Background, Problem Formulation, Literature Review, etc.). This helps the AI know the correct formatting structure based on the official guide.
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start space-x-4">
+            <div class="text-blue-600 font-bold text-xl">4</div>
+            <div>
+              <h3 class="font-semibold text-lg mb-1">Choose AI Model</h3>
+              <p class="text-gray-600 mb-2">
+                Select the AI engine that will process your text. You can choose between:
+              </p>
+              <ul class="list-disc list-inside text-gray-600">
+                <li><strong>ChatGPT</strong> – reliable and widely used.</li>
+                <li><strong>Gemini</strong> – smart and responsive with context handling.</li>
+                <li><strong>DeepSeek</strong> – optimized for structured and technical texts.</li>
+              </ul>
+              <p class="text-gray-600 mt-2">
+                Each model offers different strengths. Try them out and compare results!
+              </p>
+            </div>
+          </li>
+          <li class="flex items-start space-x-4">
+            <div class="text-blue-600 font-bold text-xl">5</div>
+            <div>
+              <h3 class="font-semibold text-lg mb-1">Get the Result Instantly</h3>
+              <p class="text-gray-600">
+                Sistem ini akan secara instan mengembalikan teks yang telah diformat ulang berdasarkan pedoman penulisan tesis FTIF/UNIBBA. Anda dapat menyalin hasilnya. Hemat waktu, kurangi revisi, dan tingkatkan kualitas dengan hanya satu klik!
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-gray-400 text-sm">
+      &copy; 2025 PORSI AI. All rights reserved.
+    </footer>
+  </body>
+</html>
