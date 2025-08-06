@@ -21,7 +21,7 @@
 
     <style>
       body {
-        font-family: 'Inter', sans-serif;
+        font-family: "Inter", sans-serif;
       }
     </style>
 
@@ -38,7 +38,11 @@
             link.classList.remove("text-blue-600", "font-semibold", "underline")
           );
           if (navLinks[index]) {
-            navLinks[index].classList.add("text-blue-600", "font-semibold", "underline");
+            navLinks[index].classList.add(
+              "text-blue-600",
+              "font-semibold",
+              "underline"
+            );
           }
         }
 
@@ -51,20 +55,34 @@
   <body class="bg-white text-gray-800 scroll-smooth">
     <!-- Header -->
     <header class="border-b sticky top-0 z-50 bg-white">
-      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
         <div class="flex items-center space-x-2">
-          <img src="./LANDINGPAGE/public/logo.png" class="h-10 w-auto" alt="Logo" />
+          <img
+            src="./LANDINGPAGE/public/logo.png"
+            class="h-10 w-auto"
+            alt="Logo"
+          />
         </div>
         <nav class="hidden md:flex space-x-6">
-          <a href="#home" class="font-medium transition-colors duration-200">Home</a>
-          <a href="#how-it-works" class="font-medium transition-colors duration-200">How it Works</a>
-          <a href="#about" class="font-medium transition-colors duration-200">About</a>
+          <a href="#home" class="font-medium transition-colors duration-200"
+            >Home</a
+          >
+          <a
+            href="#how-it-works"
+            class="font-medium transition-colors duration-200"
+            >How it Works</a
+          >
+          <a href="#about" class="font-medium transition-colors duration-200"
+            >About</a
+          >
         </nav>
         <a
           href="https://prompt-ai-teab.vercel.app"
           class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition"
         >
-          Get Started
+          Login to Start
         </a>
       </div>
     </header>
@@ -77,152 +95,259 @@
       <div class="max-w-3xl">
         <h2 class="text-sm font-semibold text-gray-500 mb-2">PORSI AI</h2>
         <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
-          Fix Your Skripsi Format <br /> Instantly with AI
+          Fix Your Skripsi Format <br />
+          Instantly with AI
         </h1>
         <p class="text-gray-600 text-lg mb-6">
-          An AI-powered tool to automatically adjust your skripsi format according to FTI/UNIBBA's official guidelines.
+          An AI-powered tool to automatically adjust your skripsi format
+          according to FTI/UNIBBA's official guidelines.
         </p>
         <a
           href="https://prompt-ai-teab.vercel.app"
           class="inline-block bg-white border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-2 rounded-full font-medium transition"
         >
-          Start Generating ✨
+          Login to Format ✨
         </a>
       </div>
     </section>
 
-<!-- How It Works Section -->
-<section id="how-it-works" class="py-24 px-6 bg-white">
-  <div class="max-w-6xl mx-auto">
-    <h2 class="text-4xl font-bold text-center mb-20 leading-tight text-gray-900">How It Works</h2>
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-24 px-6 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="text-4xl font-bold text-center mb-20 leading-tight text-gray-900"
+        >
+          How It Works
+        </h2>
 
-    <div class="space-y-24">
-      <!-- Step 1 -->
-      <div class="grid md:grid-cols-2 items-center gap-12">
-        <img src="./LANDINGPAGE/public/gif/login.gif" alt="Login" class="w-full rounded-2xl shadow-xl" />
-        <div>
-          <h3 class="text-xl font-semibold text-gray-800 mb-3">1. Login</h3>
-          <p class="text-gray-600 leading-relaxed">
-            Sign in with your student account to access the system. Only FTI UNIBBA students are allowed to ensure usage compliance.
-          </p>
+        <div class="space-y-24">
+          <!-- Step 1 - Register -->
+          <div class="grid md:grid-cols-2 items-center gap-12">
+            <img
+              src="./LANDINGPAGE/public/gif/register.png"
+              alt="Register"
+              class="w-full rounded-2xl shadow-xl"
+            />
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                1. Register via G-Form
+              </h3>
+              <p class="text-gray-600 leading-relaxed mb-2">
+                Before using PorsiAI, please register using the official form to
+                verify your student data. After your data is approved and
+                entered into the system by the admin, your login access will be
+                sent to you via the contact information provided.
+              </p>
+              <a
+                href="https://forms.gle/NQBveEnwsPkazusU6"
+                target="_blank"
+                class="inline-block mt-3 text-blue-600 hover:underline font-medium"
+              >
+                👉 Fill Registration Form
+              </a>
+            </div>
+          </div>
+
+          <!-- Divider -->
+          <div class="border-t border-gray-200 my-16 w-full"></div>
+
+          <!-- Step 2 - Login -->
+          <div class="grid md:grid-cols-2 items-center gap-12">
+            <div class="md:order-1">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">2. Login</h3>
+              <p class="text-gray-600 leading-relaxed">
+                After registering, log in using your verified FTI UNIBBA student
+                account to access the AI formatting tool.
+              </p>
+            </div>
+            <div class="md:order-2">
+              <img
+                src="./LANDINGPAGE/public/gif/login.gif"
+                alt="Login"
+                class="w-full rounded-2xl shadow-xl"
+              />
+            </div>
+          </div>
+
+          <!-- Divider -->
+          <div class="border-t border-gray-200 my-16 w-full"></div>
+
+          <!-- Step 3 - Paste -->
+          <div class="grid md:grid-cols-2 items-center gap-12">
+            <div class="md:order-2">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                3. Paste Your Skripsi Text
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                Paste the part of your skripsi you'd like the AI to format.
+              </p>
+            </div>
+            <div class="md:order-1">
+              <img
+                src="./LANDINGPAGE/public/gif/paste.gif"
+                alt="Paste Text"
+                class="w-full rounded-2xl shadow-xl"
+              />
+            </div>
+          </div>
+
+          <!-- Divider -->
+          <div class="border-t border-gray-200 my-16 w-full"></div>
+
+          <!-- Step 4 - Choose Section -->
+          <div class="grid md:grid-cols-2 items-center gap-12">
+            <div class="md:order-1">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                4. Choose the Section
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                Indicate which section (e.g., Abstract, Background, etc.) so AI
+                formats it accordingly.
+              </p>
+            </div>
+            <div class="md:order-2">
+              <img
+                src="./LANDINGPAGE/public/gif/choose-section.gif"
+                alt="Choose Section"
+                class="w-full rounded-2xl shadow-xl"
+              />
+            </div>
+          </div>
+
+          <!-- Divider -->
+          <div class="border-t border-gray-200 my-16 w-full"></div>
+
+          <!-- Step 5 - Choose AI -->
+          <div class="grid md:grid-cols-2 items-center gap-12">
+            <div class="md:order-2">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                5. Choose AI Model
+              </h3>
+              <p class="text-gray-600 leading-relaxed mb-2">
+                Select the AI engine to process your text:
+              </p>
+              <ul class="list-disc list-inside text-gray-600 space-y-1">
+                <li><strong>ChatGPT</strong> – reliable and easy-to-use.</li>
+                <li><strong>Gemini</strong> – smart and responsive.</li>
+                <li><strong>DeepSeek</strong> – technical and structured.</li>
+              </ul>
+            </div>
+            <div class="md:order-1">
+              <img
+                src="./LANDINGPAGE/public/gif/choose-model.gif"
+                alt="Choose Model"
+                class="w-full rounded-2xl shadow-xl"
+              />
+            </div>
+          </div>
+
+          <!-- Divider -->
+          <div class="border-t border-gray-200 my-16 w-full"></div>
+
+          <!-- Step 6 - Result -->
+          <div class="grid md:grid-cols-2 items-center gap-12">
+            <div class="md:order-1">
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">
+                6. Get the Result Instantly
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                The AI will format your text instantly based on FTI/UNIBBA
+                guidelines.
+              </p>
+            </div>
+            <div class="md:order-2">
+              <img
+                src="./LANDINGPAGE/public/gif/result.gif"
+                alt="Result"
+                class="w-full rounded-2xl shadow-xl"
+              />
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Divider -->
-      <div class="border-t border-gray-200 my-16 w-full"></div>
-
-      <!-- Step 2 -->
-      <div class="grid md:grid-cols-2 items-center gap-12">
-        <div class="md:order-2">
-          <img src="./LANDINGPAGE/public/gif/paste.gif" alt="Paste Text" class="w-full rounded-2xl shadow-xl" />
-        </div>
-        <div class="md:order-1">
-          <h3 class="text-xl font-semibold text-gray-800 mb-3">2. Paste Your Skripsi Text</h3>
-          <p class="text-gray-600 leading-relaxed">
-            Paste the part of your skripsi you'd like the AI to format.
-          </p>
-        </div>
-      </div>
-
-      <!-- Divider -->
-      <div class="border-t border-gray-200 my-16 w-full"></div>
-
-      <!-- Step 3 -->
-      <div class="grid md:grid-cols-2 items-center gap-12">
-        <img src="./LANDINGPAGE/public/gif/choose-section.gif" alt="Choose Section" class="w-full rounded-2xl shadow-xl" />
-        <div>
-          <h3 class="text-xl font-semibold text-gray-800 mb-3">3. Choose the Section</h3>
-          <p class="text-gray-600 leading-relaxed">
-            Indicate which section (e.g., Abstract, Background, etc.) so AI formats it accordingly.
-          </p>
-        </div>
-      </div>
-
-      <!-- Divider -->
-      <div class="border-t border-gray-200 my-16 w-full"></div>
-
-      <!-- Step 4 -->
-      <div class="grid md:grid-cols-2 items-center gap-12">
-        <div class="md:order-2">
-          <img src="./LANDINGPAGE/public/gif/choose-model.gif" alt="Choose Model" class="w-full rounded-2xl shadow-xl" />
-        </div>
-        <div class="md:order-1">
-          <h3 class="text-xl font-semibold text-gray-800 mb-3">4. Choose AI Model</h3>
-          <p class="text-gray-600 leading-relaxed mb-2">Select the AI engine to process your text:</p>
-          <ul class="list-disc list-inside text-gray-600 space-y-1">
-            <li><strong>ChatGPT</strong> – reliable and easy-to-use.</li>
-            <li><strong>Gemini</strong> – smart and responsive.</li>
-            <li><strong>DeepSeek</strong> – technical and structured.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Divider -->
-      <div class="border-t border-gray-200 my-16 w-full"></div>
-
-      <!-- Step 5 -->
-      <div class="grid md:grid-cols-2 items-center gap-12">
-        <img src="./LANDINGPAGE/public/gif/result.gif" alt="Result" class="w-full rounded-2xl shadow-xl" />
-        <div>
-          <h3 class="text-xl font-semibold text-gray-800 mb-3">5. Get the Result Instantly</h3>
-          <p class="text-gray-600 leading-relaxed">
-            The AI will format your text instantly based on FTI/UNIBBA guidelines.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- About Section -->
-<section id="about" class="py-24 bg-gradient-to-b from-gray-50 to-white px-4">
-  <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-4xl font-bold text-gray-900 mb-4">About <span class="text-blue-600">PorsiAI</span></h2>
-    <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-16">
-      PorsiAI is a smart assistant built to help students at FTI UNIBBA instantly format their skripsi according to university standards —
-      <strong class="text-blue-600">accurately, efficiently, and effortlessly</strong>.
-    </p>
-
-    <div class="grid md:grid-cols-3 gap-8 text-left">
-      <!-- Card 1 -->
-      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 group">
-        <div class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-blue-600 mb-4 group-hover:scale-110 transition">
-          <!-- Graduation Icon -->
-          🎓
-        </div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition">Built for Students</h3>
-        <p class="text-gray-600 leading-relaxed">
-          Tailored specifically for FTI UNIBBA students. It understands and applies official skripsi guidelines to every section you write.
+    <!-- About Section -->
+    <section
+      id="about"
+      class="py-24 bg-gradient-to-b from-gray-50 to-white px-4"
+    >
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">
+          About <span class="text-blue-600">PorsiAI</span>
+        </h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-16">
+          PorsiAI is a smart assistant built to help students at FTI UNIBBA
+          instantly format their skripsi according to university standards —
+          <strong class="text-blue-600"
+            >accurately, efficiently, and effortlessly</strong
+          >.
         </p>
-      </div>
 
-      <!-- Card 2 -->
-      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 group">
-        <div class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-blue-600 mb-4 group-hover:scale-110 transition">
-          <!-- Chip Icon -->
-          🤖
+        <div class="grid md:grid-cols-3 gap-8 text-left">
+          <!-- Card 1 -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 group"
+          >
+            <div
+              class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-blue-600 mb-4 group-hover:scale-110 transition"
+            >
+              🎓
+            </div>
+            <h3
+              class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition"
+            >
+              Built for Students
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Tailored specifically for FTI UNIBBA students. It understands and
+              applies official skripsi guidelines to every section you write.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 group"
+          >
+            <div
+              class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-blue-600 mb-4 group-hover:scale-110 transition"
+            >
+              🤖
+            </div>
+            <h3
+              class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition"
+            >
+              AI at the Core
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Powered by state-of-the-art AI models like ChatGPT, Gemini, and
+              DeepSeek to ensure fast, intelligent, and context-aware
+              formatting.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 group"
+          >
+            <div
+              class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-blue-600 mb-4 group-hover:scale-110 transition"
+            >
+              ✅
+            </div>
+            <h3
+              class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition"
+            >
+              Quality First
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Eliminate tedious formatting tasks and reduce human error. Let
+              PorsiAI handle the style, so you can focus on the substance.
+            </p>
+          </div>
         </div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition">AI at the Core</h3>
-        <p class="text-gray-600 leading-relaxed">
-          Powered by state-of-the-art AI models like ChatGPT, Gemini, and DeepSeek to ensure fast, intelligent, and context-aware formatting.
-        </p>
       </div>
-
-      <!-- Card 3 -->
-      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 group">
-        <div class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-blue-600 mb-4 group-hover:scale-110 transition">
-          <!-- Checklist Icon -->
-          ✅
-        </div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition">Quality First</h3>
-        <p class="text-gray-600 leading-relaxed">
-          Eliminate tedious formatting tasks and reduce human error. Let PorsiAI handle the style, so you can focus on the substance.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- Footer -->
     <footer class="py-6 text-center text-gray-400 text-sm">
